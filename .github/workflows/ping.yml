@@ -2,7 +2,7 @@ name: Render Pinger
 
 on:
   schedule:
-    - cron: '*/10 * * * *'  # Every 10 minutes
+    - cron: '*/6 * * * *'   # Every 6 minutes
   workflow_dispatch:        # Optional: Manual trigger
 
 jobs:
@@ -25,19 +25,19 @@ jobs:
 
       - name: Ping App 3
         run: |
-          echo "Pinging Xorynx Official More..."
+          echo "Pinging Xorynx About..."
           curl -v https://xorynx-official.onrender.com/
 
       - name: Ping App 4
         run: |
-          echo "Pinging Xorynx Internship..."
+          echo "Pinging Xorynx Career..."
           curl -v https://xorynx-internship.onrender.com/
 
       - name: Ping App 5
         run: |
           echo "Pinging Xorynx Silta..."
           curl -v https://xorynx-silta.onrender.com/
-
+          
       - name: Ping App 6
         run: |
           echo "Pinging Xorynx Opinion..."
@@ -47,4 +47,18 @@ jobs:
         run: |
           echo "Pinging Xorynx News..."
           curl -v https://xorynx-news.onrender.com/
-          
+
+      - name: Ping App 8
+        run: |
+          echo "Pinging Xorynx Notification..."
+          curl -v https://xorynx-notification.onrender.com/
+
+      - name: Ping App 9
+        run: |
+          echo "Pinging Xorynx Artestix..."
+          curl -v https://xorynx-artestix.onrender.com/
+
+      - name: Ping App 10
+        run: |
+          echo "Pinging Xorynx Account..."
+          curl -v https://xorynx-account.onrender.com/auth/signin
